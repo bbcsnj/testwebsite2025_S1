@@ -1,1 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* COLOR PALETTE USED:
+Chiefs red #CA2430
+Chiefs yellow #FFB612
+*/
+* { box-sizing: border-box; }
+body { 
+color: #000000;
+font-family: "Roboto", Verdana, Arial, sans-serif;
+margin: 0;
+display: flex;
+flex-direction: column;
+height: 100vh;  
+height: fit-content;  
+}
+header { 
+background-color: #CA2430;
+padding: 1rem;
+background-image:url("https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/National_Football_League_logo.svg/1200px-National_Football_League_logo.svg.png");
+background-size: 65px;
+background-repeat: no-repeat;
+background-position: top 5px left 50px;  
+}
+h1 {
+color: #FFFFFF;
+font-family: "Roboto", Georgia, serif;  
+font-weight: 900;
+font-size: 1.7rem;
+text-align: center;
+text-shadow: 2px 2px black;
+}
+h2 { color: #CA2430;}
+nav { background-color: #FFB612;
+font-size: 1.2rem;
+text-align: center;
+font-weight: bold;
+position: sticky;
+top: 0;  
+}
+.navbar-links {
+display: flex;
+justify-content: center;
+}
+nav a { text-decoration: none; }
+nav a:link   { color: #000000; }
+nav a:visited { color: #000000; }
+nav a:hover   { color: #CA2430; }
+.mynav {
+padding: 1rem 1rem;
+}
+main {
+display: flex;
+flex-grow: 1;
+}
+section {
+width: 50rem;
+background-image: linear-gradient(to bottom, #FFB612, #FFFFFF 100%); 
+}
+.content {
+padding: 2rem 3rem;
+}
+img {
+float: right;
+margin: 2rem;
+}
+.info {
+padding-bottom: 0.25rem;
+}
+footer { background-color: #ffffff;
+font-size: .70rem;
+font-style: italic;
+padding: 1em;
+text-align: center;
+}
+/* MEDIA QUERY FOR MOBILE */
+@media (max-width: 480px) {
+  section {
+  width: 0;   
+  }  
+/* Used flexbox ordering to reorder my flex items when it is for a mobile device */
+  nav {
+    order: 1;   
+  }
+  
+  header {
+    order: 2;   
+  } 
+   
+  main {
+    order: 3;   
+  }
+   
+  footer {
+    order: 4;   
+  } 
+  
+/* HAMBURGER MENU THAT WORKS WITH JAVASCRIPT */
+  .navbar-links { 
+    flex-direction: column;
+  }
+  .mynav { 
+    border-bottom: 1px solid black;
+  }  
+  
+  .toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+ 
+  .toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    /* ADDED A box-shadow so the lines stand out when scrolling */
+    box-shadow: 1px 1px black;
+  }
+  
+  .toggle-button {
+    display: flex;
+  }
+  
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  
+  .navbar-links.active {
+    display: flex;
+  }  
+}
+@media (max-width: 620px)
+{
+  header 
+  {
+    background-image: none;  
+  }
+}  
 
