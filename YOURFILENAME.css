@@ -82,6 +82,9 @@ text-align: center;
   margin: 0 auto 0 auto;
   display: block;
   }
+  .content {
+  padding: 2rem 2rem;
+  }  
 /* Used flexbox ordering to reorder my flex items when it is for a mobile device */
   nav {
     order: 1;   
