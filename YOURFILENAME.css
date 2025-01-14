@@ -83,7 +83,7 @@ text-align: center;
   display: block;
   }
   .content {
-  padding: 2rem 2rem;
+  padding: 15px 30px;
   }  
 /* Used flexbox ordering to reorder my flex items when it is for a mobile device */
   nav {
