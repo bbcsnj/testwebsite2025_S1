@@ -79,7 +79,7 @@ text-align: center;
   }  
   img {
   float: none;
-  margin:0;
+  margin: 0 auto 0 auto;
   display: block;
   }
 /* Used flexbox ordering to reorder my flex items when it is for a mobile device */
